@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+    </head>
+    <script type="text/javascript">
+        var client = new WebSocket('ws://127.0.0.1:8080', 'echo-protocol');
+        client.onmessage = function (ret) {
+            console.log("msg in: %s", ret.data);
+        }
+    </script>
+    <body>
+    </body>
+</html>
